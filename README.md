@@ -1,73 +1,186 @@
-# Welcome to your Lovable project
+# Serviços do Bairro - Protótipo Web
 
-## Project info
+![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-38bdf8?logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-5.x-646cff?logo=vite)
 
-**URL**: https://lovable.dev/projects/bc7d3a99-da72-4aba-880a-23d989a226a0
+## 📋 Sobre o Projeto
 
-## How can I edit this code?
+Este projeto é um protótipo funcional desenvolvido como parte da **Avaliação do Módulo 3** da disciplina **Projeto Integrador I** do curso de **Tecnologia da Informação** pela **UFMS Digital**.
 
-There are several ways of editing your application.
+O **Serviços do Bairro** é uma plataforma digital destinada a facilitar a divulgação e o acesso a serviços oferecidos por trabalhadores formais e informais do bairro Timbu e regiões vizinhas (Eusébio/Fortaleza - CE).
 
-**Use Lovable**
+### 🎯 Objetivo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc7d3a99-da72-4aba-880a-23d989a226a0) and start prompting.
+Promover a visibilidade de profissionais locais, fortalecer a economia comunitária e facilitar a conexão entre prestadores de serviços e moradores que buscam serviços próximos e confiáveis.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 👥 Público-Alvo
 
-**Use your preferred IDE**
+- **Trabalhadores formais e informais** que desejam divulgar seus serviços
+- **Moradores** em busca de profissionais qualificados no próprio bairro
+- **Pessoas da segunda idade** - interface pensada para ser simples e acessível
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Tecnologias Utilizadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Este protótipo foi desenvolvido utilizando tecnologias modernas e amplamente adotadas no mercado:
 
-Follow these steps:
+- **React 18** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário para estilização
+- **Vite** - Build tool moderna e rápida
+- **Shadcn/ui** - Componentes UI reutilizáveis e acessíveis
+- **Lucide React** - Biblioteca de ícones
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📦 Estrutura do Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+src/
+├── assets/          # Imagens e recursos estáticos
+├── components/      # Componentes reutilizáveis
+│   └── ui/         # Componentes UI (shadcn)
+├── hooks/          # Custom React Hooks
+├── lib/            # Utilitários e helpers
+├── pages/          # Páginas da aplicação
+│   └── Index.tsx   # Página inicial
+├── App.tsx         # Componente principal
+├── index.css       # Estilos globais e design system
+└── main.tsx        # Entry point da aplicação
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎨 Design System
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+O projeto implementa um design system completo e consistente:
+
+### Cores Principais
+- **Primary (Azul)** - `hsl(210 85% 48%)` - Confiança e profissionalismo
+- **Secondary (Laranja)** - `hsl(28 90% 60%)` - Calor e acolhimento
+- **Background** - `hsl(42 45% 97%)` - Suave e convidativo
+
+### Princípios de Design
+- **Acessibilidade em primeiro lugar** - Alto contraste, fontes legíveis
+- **Responsividade total** - Funciona perfeitamente em todos os dispositivos
+- **Interface intuitiva** - Navegação simples e clara
+- **Visual moderno** - Gradientes, sombras suaves e animações sutis
+
+## 🌟 Funcionalidades Implementadas
+
+### ✅ Requisitos da Atividade
+
+1. **✓ Cabeçalho** - Com logo e nome "Serviços do Bairro"
+2. **✓ Descrição** - Seção explicando o propósito da plataforma
+3. **✓ Imagem Ilustrativa** - Imagem hero representando a comunidade
+4. **✓ Botões de Ação** - "Buscar Serviços" e "Anunciar Serviço"
+5. **✓ Layout Responsivo** - Adaptado para mobile, tablet e desktop
+
+### 💡 Funcionalidades Extras
+
+- **Hero Section** - Banner principal com call-to-action destacado
+- **Seção "Como Funciona"** - Cards explicativos com ícones
+- **Seção CTA** - Call-to-action secundário para engajamento
+- **Footer** - Informações do projeto e localização
+- **Animações** - Transições suaves e efeitos visuais
+- **Design System** - Sistema de design consistente e escalável
+
+## 🖥️ Como Executar o Projeto
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_PROJETO>
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Acesse no navegador:
+```
+http://localhost:8080
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build para Produção
 
-**Use GitHub Codespaces**
+Para gerar a versão de produção otimizada:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+Os arquivos otimizados serão gerados na pasta `dist/`.
 
-This project is built with:
+## 📱 Responsividade
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+O protótipo foi desenvolvido com **mobile-first approach** e é totalmente responsivo:
 
-## How can I deploy this project?
+- **Mobile** (< 768px) - Layout em coluna única, touch-friendly
+- **Tablet** (768px - 1024px) - Layout adaptado para telas médias
+- **Desktop** (> 1024px) - Layout completo com múltiplas colunas
 
-Simply open [Lovable](https://lovable.dev/projects/bc7d3a99-da72-4aba-880a-23d989a226a0) and click on Share -> Publish.
+## 🎓 Contexto Acadêmico
 
-## Can I connect a custom domain to my Lovable project?
+### Disciplina
+**Projeto Integrador I - Tecnologia da Informação**
 
-Yes, you can!
+### Instituição
+**UFMS Digital - Universidade Federal de Mato Grosso do Sul**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Semestre
+**2025.2**
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Autores
+- Kayque Monte Teixeira Dias
+- Joel Holanda Rocha
+
+### Local de Aplicação
+Bairro Timbu, Eusébio - Ceará
+
+## 📝 Conceitos Aplicados
+
+Este projeto demonstra a aplicação prática de:
+
+- ✅ **Frameworks modernos** (React)
+- ✅ **Estilização responsiva** (Tailwind CSS)
+- ✅ **Componentização** e reutilização de código
+- ✅ **Design System** e tokens de design
+- ✅ **Boas práticas** de desenvolvimento web
+- ✅ **Tipagem estática** com TypeScript
+- ✅ **Acessibilidade web** (WCAG)
+- ✅ **Performance** e otimização
+
+## 🔧 Scripts Disponíveis
+
+```bash
+npm run dev          # Inicia servidor de desenvolvimento
+npm run build        # Gera build de produção
+npm run preview      # Preview do build de produção
+npm run lint         # Executa linter (ESLint)
+```
+
+## 📚 Referências
+
+- [React Documentation](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Vite](https://vitejs.dev/)
+
+## 📄 Licença
+
+Este projeto é desenvolvido para fins educacionais como parte da disciplina Projeto Integrador I.
+
+---
+
+**Desenvolvido com ❤️ para a comunidade do Bairro Timbu**
