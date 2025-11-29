@@ -13,7 +13,7 @@ O **Serviços do Bairro** é uma plataforma digital destinada a facilitar a divu
 
 ### 🎯 Objetivo
 
-Promover a visibilidade de profissionais locais, fortalecer a economia comunitária e facilitar a conexão entre prestadores de serviços e moradores que buscam serviços próximos e confiáveis.
+Promover a visibilidade de profissionais locais, fortalecer a economia comunitária e facilitar a conexão entre prestadores de serviços e moradores que buscam serviços próximos e confiáveis
 
 ### 👥 Público-Alvo
 
