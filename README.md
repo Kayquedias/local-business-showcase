@@ -34,7 +34,7 @@ Este protótipo foi desenvolvido utilizando tecnologias modernas e amplamente ad
 
 ## 📦 Estrutura do Projeto
 
-```
+\`\`\`
 src/
 ├── assets/          # Imagens e recursos estáticos
 ├── components/      # Componentes reutilizáveis
@@ -46,7 +46,7 @@ src/
 ├── App.tsx         # Componente principal
 ├── index.css       # Estilos globais e design system
 └── main.tsx        # Entry point da aplicação
-```
+\`\`\`
 
 ## 🎨 Design System
 
@@ -92,33 +92,33 @@ O projeto implementa um design system completo e consistente:
 ### Instalação
 
 1. Clone o repositório:
-```bash
+\`\`\`bash
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_PROJETO>
-```
+\`\`\`
 
 2. Instale as dependências:
-```bash
+\`\`\`bash
 npm install
-```
+\`\`\`
 
 3. Inicie o servidor de desenvolvimento:
-```bash
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
 4. Acesse no navegador:
-```
+\`\`\`
 http://localhost:8080
-```
+\`\`\`
 
 ### Build para Produção
 
 Para gerar a versão de produção otimizada:
 
-```bash
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
 Os arquivos otimizados serão gerados na pasta `dist/`.
 
@@ -163,12 +163,12 @@ Este projeto demonstra a aplicação prática de:
 
 ## 🔧 Scripts Disponíveis
 
-```bash
+\`\`\`bash
 npm run dev          # Inicia servidor de desenvolvimento
 npm run build        # Gera build de produção
 npm run preview      # Preview do build de produção
 npm run lint         # Executa linter (ESLint)
-```
+\`\`\`
 
 ## 📚 Referências
 
