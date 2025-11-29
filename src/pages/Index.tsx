@@ -39,18 +39,24 @@ const Index = () => {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button 
+                asChild
                 size="lg" 
                 className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-medium text-base md:text-lg px-8 py-6"
               >
-                <Search className="mr-2 h-5 w-5" />
-                Buscar Serviços
+                <a href="/profissionais">
+                  <Search className="mr-2 h-5 w-5" />
+                  Buscar Serviços
+                </a>
               </Button>
               <Button 
+                asChild
                 size="lg" 
                 variant="outline" 
                 className="border-2 border-primary-foreground bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm text-base md:text-lg px-8 py-6"
               >
-                Anunciar Serviço
+                <a href="/cadastro">
+                  Anunciar Serviço
+                </a>
               </Button>
             </div>
           </div>
@@ -128,11 +134,14 @@ const Index = () => {
             Junte-se à nossa comunidade e descubra os melhores serviços do seu bairro.
           </p>
           <Button 
+            asChild
             size="lg" 
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-medium text-base md:text-lg px-8 py-6"
           >
-            <Phone className="mr-2 h-5 w-5" />
-            Entrar em Contato
+            <a href="/cadastro">
+              <Phone className="mr-2 h-5 w-5" />
+              Cadastrar Serviço
+            </a>
           </Button>
         </div>
       </section>
